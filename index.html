@@ -1,0 +1,1807 @@
+<div id="hc_richmedia">
+    <meta name="viewport" content="width=device-width">
+        <style type="text/css">
+            
+            #hc_richmedia .hc_expand {
+                
+            }
+            #hc_richmedia .hc_closebtn {
+                position:absolute;
+                top: 0;
+                right: 0;
+                z-index:2;
+                cursor:pointer;
+                display: block;
+                height: 15px;
+                width: 45px;
+            }
+            #hc_richmedia .hc_closebtn img {
+                position:relative;
+                z-index:20;
+                display: block;
+            }
+            #hc_richmedia .hc_content {
+                position:relative;
+                width: 100%;
+                max-width: 650px;
+                height:300px;
+                text-align:center;
+                z-index:1;
+                overflow: hidden;
+                background-color: #c9dae2;
+            }
+            #hc_richmedia .hc_header { 
+                display: block;  
+                margin-bottom: 5%;
+            }
+            
+            /*Custom*/
+            
+            /*expand*/
+             #hc_richmedia {
+                 max-width: 650px;
+             }
+            #hc_richmedia .hc_content {
+                background-image: url("images/calottery/47120.jpg");
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+            .hc_initial_view {
+                width: 320px;
+                height: 50px;
+                background: url("images/calottery/47093.jpg") no-repeat;
+                position: relative;
+                overflow: hidden;
+            }
+            .hc_tu {
+                position: absolute;
+                top: 9px;
+                left: 5px;
+                display: inline-block;
+            }
+            .hc_tu img {
+                width: 150px;
+            }
+            .hc_nosotros {
+                position: absolute;
+                top: -45px;
+                left: 5px;
+                display: inline-block;
+            }
+            .hc_nosotros img {
+                width: 135px;
+            }
+            .hc_tickets {
+                position: absolute;
+                right: 20px;
+                display: inline-block;
+                bottom: 0;
+                vertical-align: bottom;
+                height: 100%;
+            }
+            .hc_tickets img, .hc_ticketmid img {
+                width: 118px;
+            }
+            .hc_ticketmid {
+                position: absolute;
+                left: 118px;
+                display: inline-block;
+                bottom: 0;
+                vertical-align: bottom;
+                height: 100%;
+            }
+            .hc_logo_bit {
+                position: absolute;
+                right: 2px;
+                display: inline-block;
+                top: 1px;
+            }
+            .hc_logo_bit img {
+                width: 12px;
+            }
+            .hc_endframe {
+                display: none;
+            }
+            .hc_nuevo {
+                left: 5px;
+                top: 2px;
+                position: absolute;
+            }
+            .hc_nuevo img {
+                width: 109px;
+            }
+            .hc_expandir {
+                position: absolute;
+                right: 3px;
+                display: inline-block;
+                top: 3px;
+                height: 100%;
+            }
+            .hc_expandir img {
+                width: 88px;
+            }
+            /*expand ad*/
+            
+            #hc_richmedia .hc_closebtn {
+                top: 5px;
+                right: 5px;
+                width: 2.5%;
+            }
+            .hc_closebtn img {
+                width: 100%;
+            }
+            #hc_richmedia .hc_header {
+                display: table;
+                width: 100%;
+                text-align: left;
+            }
+            .hc_logo {
+                display: inline-block;
+                text-align: left;
+                padding-left: 1em;
+                width: 65%;
+            }
+            .hc_logo img {
+                width: 100%;
+                max-width: 240px;
+            }
+            .hc_social {
+                display: inline-block;
+            }
+            .hc_socialblock {
+                padding: 1em;
+            }
+            .hc_iconrow {
+                list-style-type:none;
+                margin:0;
+                padding:0;
+            }
+            .hc_icon {
+                list-style-type:none;
+                margin:0;
+                padding:0;
+                display: inline;
+                clear:none;
+                width:30%;
+                cursor: pointer;
+            }
+            /*intro screen*/
+            .hc_screen_intro canvas {
+                position: absolute;
+                margin: 0 auto;
+                top: 40%;
+                left: 15%;
+            }
+            .hc_nosotros_pagamos {
+                display: none;
+                opacity: 0;
+                position: relative;
+                left: 0;
+                top: -80px;
+                width: 40%;
+                margin-left: 1em;
+                z-index: 10;
+            }
+            .hc_nosotros_pagamos.on {
+                display: block;
+            }
+            .hc_impuestos {
+                display: none;
+                opacity: 0;
+                position: relative;
+                left: 0;
+                top: -80px;
+                width: 30%;
+                margin-left: 1em;
+                z-index: 10;
+            }
+            .hc_impuestos.on {
+                display: block;
+            }
+            .hc_tuganas_premio {
+                display: none;
+                opacity: 0;
+                position: relative;
+                left: 0;
+                top: -80px;
+                width: 30%;
+                margin-left: 1em;
+                z-index: 10;
+            }
+            .hc_tuganas_premio.on {
+                display: block;
+            }
+            .hc_el_premio {
+                display: none;
+                opacity: 0;
+                position: relative;
+                left: 0;
+                top: -80px;
+                width: 60%;
+                margin-left: 1em;
+                z-index: 10;
+            }
+            .hc_el_premio.on {
+                display: block;
+            }
+            .hc_tuganas_premio img, .hc_el_premio img, .hc_nosotros_pagamos img, .hc_impuestos img {
+                width: 100%;
+                display: block;
+            }
+            /*cta screen*/
+            .hc_screen_cta {
+                display: none;
+            }
+            .hc_screen_cta.on {
+                display: block;
+            }
+            .hc_tuganas {
+                display: none;
+                opacity: 0;
+                position: relative;
+                left: 0;
+                top: -80px;
+                width: 45%;
+                margin-left: 1em;
+                z-index: 10;
+            }
+            .hc_tuganas.on {
+                display: block;
+            }
+            .hc_npl {
+                display: none;
+                opacity: 0;
+                position: relative;
+                left: 0;
+                top: 0px;
+                width: 40%;
+                margin-left: 1em;
+                z-index: 10;
+            }
+            .hc_npl.on {
+                display: block;
+            }
+            .hc_todo {
+                display: none;
+                opacity: 0;
+                position: relative;
+                left: 0;
+                top: 20px;
+                width: 30%;
+                margin-left: 1em;
+                z-index: 10;
+            }
+            .hc_todo.on {
+                display: block;
+            }
+            .hc_nuevo_rm {
+                display: none;
+                position: relative;
+                opacity: 0;
+                left: 0;
+                top: -100px;
+                width: 25%;
+                margin-left: 1em;
+                z-index: 10;
+            }
+            .hc_nuevo_rm.on {
+                display: block;
+            }
+            .hc_taxes {
+                display: none;
+                opacity: 0;
+                position: relative;
+                left: 0;
+                top: -130px;
+                width: 40%;
+                margin-left: 1em;
+                z-index: 10;
+            }
+            .hc_taxes.on {
+                display: block;
+            }
+            .hc_scratchy {
+                display: none;
+                opacity: 0;
+                position: relative;
+                left: 0;
+                top: -200px;
+                width: 20%;
+                margin-left: 1em;
+                z-index: 10;
+            }
+            .hc_scratchy.on {
+                display: block;
+            }
+            .hc_tickblue {
+                position: absolute;
+                /*bottom: -10px;*/
+                bottom: -200px;
+                width: 40%;
+                left: 160px;
+            }
+            .hc_tickgreen {
+                position: absolute;
+                /*bottom: -45px;*/
+                bottom: -400px;
+                width: 40%;
+                left: 150px;
+            }
+            .hc_tickpurple {
+                position: absolute;
+                /*bottom: -110px;*/
+                bottom: -600px;
+                width: 40%;
+                left: 250px;
+            }
+            .hc_tuganas img, .hc_npl img, .hc_todo img, .hc_tickblue img, .hc_tickgreen img, .hc_tickpurple img, .hc_store img, .hc_nuevo_rm img, .hc_taxes img, .hc_scratchy img {
+                width: 100%;
+                display: block;
+            }
+            .hc_legal {
+                display: none;
+                position: absolute;
+                margin: 0 0 1em 1em;
+                font-size: 1em;
+                bottom: 0;
+                left: 0;
+                cursor: pointer;
+            }
+            .hc_store {
+                display: none;
+                position: absolute;
+                margin: 0 1em 1em 0;
+                bottom: 0;
+                right: 0;
+                width: 30%;
+                cursor: pointer;
+            }
+            .hc_store.on {
+                display: block;
+            }
+            /*legal*/
+            .hc_overlay {
+                display: none;
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                background: rgba(255,255,255,.9);
+                top: 0;
+                z-index: 30;
+            }
+            .hc_overlay.on {
+                display: block;
+            }
+            .hc_playback {
+                display: none;
+                cursor: pointer;
+                text-align: left;
+                margin: 1em 0 0 1em;
+                font-size: .7em;
+                font-family: 'Didact Gothic', sans-serif !important;
+            }
+            .hc_playback.on {
+                display: block;
+            }
+            .hc_play img {
+                width: 100%;
+                display: block;
+                max-width: 200px;
+                margin: 0 auto;
+            }
+            .hc_legaltext {
+                padding: 2em;
+                font-weight: bold;
+                font-size: .9em;
+            }
+            /* LOCATION FINDER STYLES */
+            .hc_backmap {
+                font-size: .7em;
+                text-align: left;
+                margin: -10px 10px 0 1em;
+                padding-bottom: 8px;
+                font-family: 'Didact Gothic', sans-serif !important;
+                cursor: pointer;
+            }
+
+            #hc_locate {
+                display: none;	
+            }
+            #hc_locate {
+                height: 100%;
+            }
+            #hc_locate a.hc_btn_back {
+                height: 45px;
+                width: 65px;
+                position: absolute;
+                top: 0;
+                left: 5%;
+            }
+            #hc_locate .hc_social {
+                position: relative;
+                width: 30%;
+                margin: 0 auto;
+            }
+            #hc_richmedia #hc_locate .hc_social img {
+                width: 45%;
+            }
+            #hc_locationbuttons .hc_btn_current img {
+                height: 50px;
+            }
+            #hc_locationbuttons input {
+                vertical-align: top;
+                height: 28px;
+                padding: 10px;
+                margin: 0 5px;
+                border-radius: 8px;
+                border: 1.5px solid black;
+                font-family: 'Didact Gothic', sans-serif !important;
+            }
+            #hc_locationbuttons .hc_btn_submit img {
+                height: 50px;
+            }
+            #map-canvas {
+                height: 200px;
+                margin: 0px;
+                padding: 0px;
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+                margin: 1em 0;
+            }
+            #hc_stores {
+                text-align: left;
+                overflow-y: scroll;
+                height: 200px;
+                font-family: 'Didact Gothic', sans-serif !important;
+            }
+            #hc_stores h2,
+            #hc_stores p {
+                padding: 0;
+                margin: 0;
+                font-size: 1em;
+                font-family: 'Didact Gothic', sans-serif !important;
+            }
+            #hc_stores p {
+                font-size: .8em;
+                line-height: 1.1em;
+            }
+            #hc_stores h2 {
+                line-height: 1em;
+            }
+            #hc_stores .result {
+                padding: .7em 1em;
+                border-bottom: 1px solid black;
+                font-family: 'Didact Gothic', sans-serif !important;
+            }
+            @media screen and (max-width: 580px) {
+                .hc_logo {
+                    width: 65%;
+                }
+                .hc_logo img {
+                    max-width: 200px;
+                }
+                .hc_siguenos img {
+                    max-width: 75px;
+                }
+                .hc_icon img {
+                    max-width: 35px;
+                }
+                .hc_screen_intro canvas {
+                    top: 40%;
+                }
+                .hc_tuganas_premio {
+                    width: 25%;
+                    top: -80px;
+                }
+                .hc_el_premio {
+                    width: 50%;
+                    top: -80px;
+                }
+                .hc_tuganas {
+                    width: 40%;
+                    top: -80px;
+                }
+                .hc_npl {
+                    width: 38%;
+                    top: 0;
+                }
+                .hc_nuevo_rm {
+                    top: -100px;
+                    width: 20%;
+                }
+                .hc_taxes {
+                    top: -130px;
+                    width: 35%;
+                }
+                .hc_scratchy {
+                    top: -200px;
+                    width: 20%; 
+                }
+                .hc_todo {
+                    width: 30%;
+                    top: 20px;
+                }
+                .hc_tickblue {
+                    left: 90px;
+                    bottom: -200px;
+                    width: 50%;
+                }
+                .hc_tickgreen {
+                    left: 70px;
+                    bottom: -400px;
+                    width: 50%;
+                }
+                .hc_tickpurple {
+                    left: 180px;
+                    bottom: -600px;
+                    width: 50%;
+                }
+            }
+            @media screen and (max-width: 500px) {
+                #hc_richmedia .hc_closebtn {
+                    width: 3%;
+                }
+                .hc_logo {
+                    width: 62%;
+                }
+                .hc_logo img {
+                    max-width: 180px;
+                }
+                .hc_icon img {
+                    max-width: 30px;
+                }
+                .hc_tuganas_premio {
+                    width: 30%;
+                    top: -80px;
+                }
+                .hc_el_premio {
+                    width: 60%;
+                    top: -80px;
+                }
+                .hc_nosotros_pagamos {
+                    width: 48%;
+                }
+                .hc_impuestos {
+                    width: 46%;
+                }
+                .hc_tuganas {
+                    width: 50%;
+                    top: -80px;
+                }
+                .hc_npl {
+                    width: 48%;
+                    top: 0;
+                }
+                .hc_nuevo_rm {
+                    top: -100px;
+                    width: 25%;
+                }
+                .hc_taxes {
+                    top: -130px;
+                    width: 50%;
+                }
+                .hc_scratchy {
+                    top: -200px;
+                    width: 25%; 
+                }
+                .hc_todo {
+                    width: 40%;
+                    top: 20px;
+                }
+                .hc_tickblue {
+                    left: 60px;
+                    /*bottom: -10px;*/
+                    bottom: -260px;
+                }
+                .hc_tickgreen {
+                    left: 40px;
+                    /*bottom: -45px;*/
+                    bottom: -460px;
+                }
+                .hc_tickpurple {
+                    left: 150px;
+                    /*bottom: -110px;*/
+                    bottom: -660px;
+                }
+            }
+            @media screen and (max-width: 450px) {
+                #hc_richmedia .hc_closebtn {
+                    width: 3.5%;
+                }
+                .hc_logo {
+                    width: 60%;
+                }
+                .hc_logo img {
+                    max-width: 180px;
+                }
+                .hc_siguenos img {
+                    max-width: 75px;
+                }
+                .hc_icon img {
+                    max-width: 28px;
+                }
+                .hc_nosotros_pagamos {
+                    display: none;
+                    opacity: 0;
+                    position: relative;
+                    left: 0;
+                    top: -80px;
+                    width: 50%;
+                    margin-left: 1em;
+                    z-index: 10;
+                }
+                .hc_nosotros_pagamos.on {
+                    display: block;
+                }
+                .hc_impuestos {
+                    display: none;
+                    opacity: 0;
+                    position: relative;
+                    left: 0;
+                    top: -80px;
+                    width: 49%;
+                    margin-left: 1em;
+                    z-index: 10;
+                }
+                .hc_impuestos.on {
+                    display: block;
+                }
+                .hc_tuganas_premio {
+                    width: 40%;
+                    top: -80px;
+                }
+                .hc_el_premio {
+                    width: 70%;
+                    top: -80px;
+                }
+                .hc_tuganas {
+                    width: 45%;
+                    top: -80px;
+                }
+                .hc_npl {
+                    width: 43%;
+                    top: 0;
+                }
+                .hc_nuevo_rm {
+                    top: -120px;
+                    width: 35%;
+                }
+                .hc_taxes {
+                    top: -150px;
+                    width: 60%;
+                }
+                .hc_scratchy {
+                    top: -220px;
+                    width: 35%; 
+                }
+                .hc_todo {
+                    width: 35%;
+                    top: 10px;
+                }
+                .hc_tickblue {
+                    /*bottom: -10px;*/
+                    bottom: -300px;
+                }
+                .hc_tickgreen {
+                    /*bottom: -45px;*/
+                    bottom: -500px;
+                }
+                .hc_tickpurple {
+                    /*bottom: -110px;*/
+                    bottom: -700px;
+                }
+                .hc_legal {
+                    font-size: .8em;
+                }
+                .hc_play img {
+                    max-width: 200px;
+                }
+                #hc_locationbuttons .hc_btn_current img {
+                    height: 40px;
+                }
+                #hc_locationbuttons input {
+                    height: 18px;
+                }
+                #hc_locationbuttons .hc_btn_submit img {
+                    height: 40px;
+                }
+            }
+
+            @media screen and (max-width: 400px) {
+                .hc_logo img {
+                    max-width: 140px;
+                }
+                .hc_siguenos img {
+                    max-width: 60px;
+                }
+                .hc_icon img {
+                    max-width: 25px;
+                }
+                .hc_screen_intro canvas {
+                    top: 40%;
+                    left: 10%;
+                }
+                .hc_tickblue {
+                    left: 40px;
+                    /*bottom: 10px;*/
+                    bottom: -250px;
+                }
+                .hc_tickgreen {
+                    left: 30px;
+                    bottom: -430px;
+                }
+                .hc_tickpurple {
+                    left: 140px;
+                    bottom: -590px;
+                }
+                .hc_legal {
+                    font-size: .6em;
+                }
+                #hc_locationbuttons .hc_btn_current img {
+                    height: 40px;
+                }
+                #hc_locationbuttons input {
+                    height: 18px;
+                    width: 90px;
+                }
+                #hc_locationbuttons .hc_btn_submit img {
+                    height: 40px;
+                }
+            }
+            @media screen and (max-width: 370px) {
+                .hc_logo img {
+                    max-width: 130px;
+                }
+                .hc_icon img {
+                    max-width: 20px;
+                }
+                .hc_screen_intro canvas {
+                    top: 40%;
+                    left: 3%;
+                }
+                .hc_tuganas_premio {
+                    width: 40%;
+                    top: -80px;
+                }
+                .hc_el_premio {
+                    width: 70%;
+                    top: -80px;
+                }
+                .hc_tuganas {
+                    width: 70%;
+                    top: -80px;
+                }
+                .hc_tuganas.io5 {
+                    width: 60%;
+                    top: -80px;
+                }
+                .hc_tuganas.io4 {
+                    width: 40%;
+                }
+                .hc_npl {
+                    width: 65%;
+                    top: 0;
+                }
+                .hc_npl.io5 {
+                    width: 55%;
+                    top: -5px;
+                }
+                .hc_npl.io4 {
+                    width: 40%;
+                    top: -5px;
+                }
+                .hc_todo {
+                    width: 50%;
+                    top: 20px;
+                }
+                .hc_todo.io5 {
+                    width: 40%;
+                }
+                .hc_todo.io4 {
+                    width: 30%;
+                    top: -10px;
+                }
+                .hc_nuevo_rm {
+                    top: -100px;
+                    width: 35%;
+                }
+                .hc_nuevo_rm.io4 {
+                    top: -120px;
+                    width: 25%;
+                }
+                .hc_taxes {
+                    top: -130px;
+                    width: 60%;
+                }
+                .hc_taxes.io4 {
+                    top: -150px;
+                    width: 45%;
+                }
+                .hc_scratchy {
+                    top: -200px;
+                    width: 35%; 
+                }
+                .hc_scratchy.io4 {
+                    top: -220px;
+                    width: 25%;
+                }
+                .hc_tickblue {
+                    left: 40px;
+                    bottom: -250px;
+                }
+                .hc_tickblue {
+                    bottom: -283px;
+                }
+                .hc_tickgreen {
+                    left: 30px;
+                    bottom: -430px;
+                }
+                .hc_tickgreen.io4 {
+                    bottom: -430px;
+                }
+                .hc_tickpurple {
+                    left: 140px;
+                    bottom: -590px;
+                }
+                .hc_tickpurple.io4 {
+                    bottom: -680px;
+                }
+                .hc_legal {
+                    font-size: .6em;
+                }
+                .hc_store {
+                    margin: 0 1em .6em 0;
+                }
+                #hc_locationbuttons .hc_btn_current img {
+                    height: 35px;
+                }
+                #hc_locationbuttons input {
+                    height: 14px;
+                    width: 80px;
+                    font-size: 70%;
+                    margin: 0 1px;
+                }
+                #hc_locationbuttons .hc_btn_submit img {
+                    height: 35px;
+                }
+            }
+            @media screen and (max-width: 330px) {
+                .hc_logo img {
+                    max-width: 130px;
+                }
+                .hc_icon img {
+                    max-width: 20px;
+                }
+                .hc_tuganas_premio {
+                    width: 40%;
+                    top: -80px;
+                }
+                .hc_el_premio {
+                    width: 70%;
+                    top: -80px;
+                }
+                .hc_tuganas {
+                    width: 75%;
+                    top: -80px;
+                }
+                .hc_npl {
+                    width: 70%;
+                    top: 0;
+                }
+                .hc_nuevo_rm {
+                    top: -100px;
+                    width: 35%;
+                }
+                .hc_taxes {
+                    top: -130px;
+                    width: 60%;
+                }
+                .hc_scratchy {
+                    top: -200px;
+                    width: 35%; 
+                }
+                .hc_todo {
+                    width: 50%;
+                    top: 20px;
+                }
+                .hc_tickblue {
+                    left: 40px;
+                    /*bottom: 10px;*/
+                    bottom: -150px;
+                }
+                .hc_tickgreen {
+                    left: 40px;
+                    bottom: -330px;
+                }
+                .hc_tickpurple {
+                    left: 120px;
+                    bottom: -490px;
+                }
+                .hc_legal {
+                    font-size: .6em;
+                }
+                .hc_store {
+                    margin: 0 1em .6em 0;
+                }
+            }
+        </style>
+        <link href='http://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
+        <script src="scripts/calottery/47090.js"></script>
+        
+        <script src="scripts/calottery/47031.js"></script>
+        <script src="scripts/calottery/47030.js"></script>
+        <script src="scripts/calottery/47029.js"></script>
+        <script src="scripts/calottery/47025.js"></script>
+        <script src="scripts/calottery/47144.js"></script>
+        
+        <!-- build:js({app,.tmp}) scripts/hc_framework.js -->
+		<!--<script src="scripts/calottery/hc_framework-0.3.4.min.js"></script>-->
+    
+		<script src="scripts/calottery/hc_framework.js"></script>
+        <!-- endbuild -->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true&language=es"></script>
+		<script type="text/javascript">
+          var hc = new hc_({"bidRequestId":"%bcid%","buyId":"%b%","sourceType":"%source_type%","sourceId":"%source_id%",
+				"publisherId":"%p%","augmeId":"%augmeid%","adId":"%ad_id%","campaignId":"%c%","costModel":"cpm",
+				"cost":parseFloat('%cost%'),"meta":"%meta%","lineItem":"%i%","pt":"%pt%",
+
+				/* Enter value below */
+				"prod": false,
+				"clientId" : ""
+			});
+            
+            console.log("v 19");
+            var time = 0;
+            
+            var locateHeight =  0;                                
+            var inputHeight = 0;
+            var mapHeight = 200;
+            var storeResults = 200;   
+            
+            /*3rd party impression tracking*/
+            /*var i = new Image();
+            i.src = 'http://servedby.flashtalking.com/imp/4/42681;1083157;201;pixel;HipcricketUS;HipcricketHispanicCustomCALotteryChannelLosAngeles768x90/?cachebuster='+new Date().getTime();*/
+            
+            var imageBaseName = ["images/calottery/47093.jpg", "images/calottery/47100.png", "images/calottery/47095.png", "images/calottery/47099.png", "images/calottery/47097.png", "images/calottery/47098.png", "images/calottery/47096.png", "images/calottery/47115.png", "images/calottery/47128.png", "images/calottery/47125.png", "images/calottery/47111.png", "images/calottery/47113.png", "images/calottery/47123.png", "images/calottery/47112.png", "images/calottery/47120.jpg", "images/calottery/47121.png", "images/calottery/47122.png", "images/calottery/47123.png", "images/calottery/47124.png", "images/calottery/47103.png", "images/calottery/47107.png", "images/calottery/47132.png", "images/calottery/47133.png", "images/calottery/47134.png", "images/calottery/47110.png", "images/calottery/47114.png", "images/calottery/47115.png", "images/calottery/47141.png", "images/calottery/47142.png", "images/calottery/47143.png", "images/calottery/47140.png"
+			];
+
+			function preloadBasic(e) {
+				var t = 0;
+				var n = [];
+				for (t = 0; t < e.length; t++) {
+					n[t] = new Image;
+					n[t].src = e[t]
+				}
+                console.log("completed");
+			}
+
+			preloadBasic(imageBaseName);
+            
+            hc_$(document).ready( function () {
+                console.log("ready");
+               
+                hc_$( ".hc_tu" ).delay(2000).animate({
+                    top: "+=50"
+                  }, 
+                    {
+                        duration: 350,
+                        easing: 'swing',
+                        complete: function () {
+                            console.log("hc_tu off");
+                        }
+                    },
+                    function() {
+                    /* Animation complete. */
+                    console.log("hc_tu off");
+                });
+                hc_$( ".hc_nosotros" ).delay(2000).animate({
+                    top: "+=47"
+                  }, 
+                    {
+                        duration: 500,
+                        easing: 'easeOutCubic',
+                        complete: function () {
+                            console.log("hc_nosotros on");
+                            hc_$(this).delay(2000).fadeOut();
+                            hc_$( ".hc_tickets" ).delay(2000).fadeOut();
+                            hc_$( ".hc_logo_bit" ).delay(2000).fadeOut();
+                            hc_$( ".hc_endframe" ).delay(2500).fadeIn();
+                        }
+                    });
+                
+                
+            });
+            
+            
+			hc.events.hc_expand_after = function () {
+                console.log('hi');
+                
+                var winHeight = window.innerHeight;
+                hc_$("#hc_richmedia .hc_content").css("height", winHeight);
+                
+                if (winHeight <= 400) {
+                    hc_$(".hc_tuganas, .hc_npl, .hc_todo, .hc_nuevo_rm, .hc_scratchy, .hc_taxes, .hc_tickblue, .hc_tickpurple, .hc_tickgreen").addClass("io4");
+                } else {
+                    if (winHeight <= 480) {
+                        hc_$(".hc_tuganas, .hc_npl, .hc_todo, .hc_nuevo_rm, .hc_scratchy, .hc_taxes, .hc_tickblue, .hc_tickpurple, .hc_tickgreen").addClass("io5");
+                    }
+                }
+                
+                
+                
+                hc_$( window ).resize(function() {
+					winHeight = window.innerHeight;
+                    hc_$("#hc_richmedia .hc_content").css("height", winHeight);
+                    
+                    
+                    if (locateHeight != 0) {
+                        console.log("resizing");
+                        locateHeight =  hc_$("#hc_locate").height();
+                        console.log(locateHeight);
+                        inputHeight = hc_$("#hc_locationbuttons").height();
+                        console.log(inputHeight);
+                        mapHeight = 200;
+                        console.log(mapHeight);
+                        storeResults = (locateHeight - inputHeight - mapHeight) - 160;
+                        hc_$("#hc_stores").css("height", storeResults);
+                    }
+                        
+				});
+                
+                hc_$(document).ready( function () {
+                    console.log("ready");
+                    
+                    /*social icons*/
+                    hc_$("#hc_facebook").on("click tap", function () {
+                        /*hc.trackGeneralEvent({
+                            category: "navigation",
+                            subcategory: "click",
+                            action: "click",
+                            label: "facebook"
+                        });*/
+                        window.location.href = "https://www.facebook.com/calottery";
+                    });
+                    
+                    hc_$("#hc_twitter").on("click tap", function () {
+                        /*hc.trackGeneralEvent({
+                            category: "navigation",
+                            subcategory: "click",
+                            action: "click",
+                            label: "twitter"
+                        });*/
+                        window.location.href = "https://twitter.com/calottery";
+                    });
+                    
+                    hc_$("#hc_instagram").on("click tap", function () {
+                        /*hc.trackGeneralEvent({
+                            category: "navigation",
+                            subcategory: "click",
+                            action: "click",
+                            label: "instagram"
+                        });*/
+                        window.location.href = "http://instagram.com/calottery";
+                    });
+                    
+                    hc_$("#hc_logoscratch").on("click tap", function (e) {
+                        /*hc.trackGeneralEvent({
+                            category: "navigation",
+                            subcategory: "click",
+                            action: "click",
+                            label: "LogoClick"
+                        });*/
+          				 e.preventDefault();
+                        window.location.href = "http://www.calottery.com/";
+                    });
+                    
+                    /*amimated intro*/
+                    
+                    var canvas, stage, exportRoot;
+                    
+                    if (time < 1) {
+                        init();
+                        time++;
+                    }
+                    console.log(time);
+
+                    function init() {
+                        canvas = document.getElementById("canvas");
+                        images = images||{};
+
+                        var manifest = [
+                            {src:"images/calottery/47015.png", id:"billeteB"},
+                            {src:"images/calottery/47016.png", id:"billeteC"},
+                            {src:"images/calottery/billeteC.png", id:"billetes2"},
+                            {src:"images/calottery/47019.png", id:"pallet"}
+                        ];
+
+                        var loader = new createjs.LoadQueue(false);
+                        loader.addEventListener("fileload", handleFileLoad);
+                        loader.addEventListener("complete", handleComplete);
+                        loader.loadManifest(manifest);
+                    }
+
+                    function handleFileLoad(evt) {
+                        if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
+                    }
+
+                    function handleComplete() {
+                        exportRoot = new lib.comSba300x250();
+
+                        stage = new createjs.Stage(canvas);
+                        stage.enableMouseOver();
+                        stage.addChild(exportRoot);
+                        stage.update();
+
+                        createjs.Ticker.setFPS(24);
+                        createjs.Ticker.addEventListener("tick", stage);
+                        
+                        /*tuganas_premio*/
+                        hc_$(".hc_tuganas_premio").addClass("on");
+                        hc_$(".hc_tuganas_premio").delay(500).animate({
+                            opacity: 1,
+                            top: "+=90"
+                        }, 
+                        {
+                            duration: 300,
+                            easing: 'swing',
+                            complete: function () {
+                                
+                                /*impuestos*/
+                                hc_$(".hc_impuestos").addClass("on");
+                                hc_$(".hc_impuestos").delay(2900).animate({
+                                    opacity: 1,
+                                    top: "+=55"
+                                }, 
+                                {
+                                    duration: 250,
+                                    easing: 'swing',
+                                    complete: function () {
+                                        console.log("hc_impuestos");
+                                    }
+                                });
+                                /*impuestos*/
+                                
+                                /*nosotros_pagamos*/
+                                hc_$(".hc_nosotros_pagamos").addClass("on");
+                                hc_$(".hc_nosotros_pagamos").delay(3100).animate({
+                                    opacity: 1,
+                                    top: "+=50"
+                                }, 
+                                {
+                                    duration: 250,
+                                    easing: 'swing',
+                                    complete: function () {
+                                        console.log("nosotros_pagamos up");
+                                    }
+                                });
+                                /*nosotros_pagamos*/
+                                
+                                /*tuganas off*/
+                                hc_$(".hc_tuganas_premio").delay(3000).animate({
+                                    opacity: 0,
+                                    top: "-=80"
+                                }, 
+                                {
+                                    duration: 250,
+                                    easing: 'swing',
+                                    complete: function () {
+                                        console.log("tu ganas up");
+                                    }
+                                });
+                                /*tuganas*/
+                                /* endframe(); */
+                                hc_$(".hc_screen_intro").delay(6000).fadeOut();
+                                setTimeout(endframe, 7000);
+                            }
+                        });
+                        /*tuganas_premio*/
+                        
+                        /*tuganas_premio*/
+                        hc_$(".hc_el_premio").addClass("on");
+                        hc_$(".hc_el_premio").delay(600).animate({
+                            opacity: 1,
+                            top: "+=100"
+                        }, 
+                        {
+                            duration: 300,
+                            easing: 'swing',
+                            complete: function () {
+                                hc_$(".hc_el_premio").delay(2800).animate({
+                                    opacity: 0,
+                                    top: "-=100"
+                                }, 
+                                {
+                                    duration: 250,
+                                    easing: 'swing',
+                                    complete: function () {
+                                        console.log("el premio up");
+                                    }
+                                });
+                            }
+                        });
+                        /*tuganas_premio*/
+
+                    }
+                
+                    
+                    /*endframe*/
+                    
+                    
+                    function endframe () {
+                        console.log("start endframe");
+                        hc_$(".hc_screen_cta").addClass("on");
+                        
+                        /*nuevo*/
+                        hc_$(".hc_nuevo_rm").addClass("on");
+                        hc_$(".hc_nuevo_rm").animate({
+                            opacity: 1,
+                            top: "+=120"
+                        }, 
+                        {
+                            duration: 300,
+                            easing: 'swing',
+                            complete: function () {
+                                hc_$(this).delay(2000).fadeOut();
+
+                            }
+                        });
+                        /*nuevo*/  
+
+                        /*taxes*/
+                        hc_$(".hc_taxes").addClass("on");
+                        hc_$(".hc_taxes").delay(200).animate({
+                            opacity: 1,
+                            top: "+=160"
+                        }, 
+                        {
+                            duration: 300,
+                            easing: 'swing',
+                            complete: function () {
+                                hc_$(this).delay(1800).fadeOut();
+
+                            }
+                        });
+                        /*taxes*/ 
+
+                        /*scratchers*/
+                        hc_$(".hc_scratchy").addClass("on");
+                        hc_$(".hc_scratchy").delay(300).fadeIn().animate({
+                            opacity: 1,
+                            top: "+=240"
+                        }, 
+                        {
+                            duration: 300,
+                            easing: 'swing',
+                            complete: function () {
+                                hc_$(this).delay(1700).fadeOut();
+                                /*taxes*/
+
+
+                            }
+                        });
+                        /*scratchers*/
+
+                        /*blue ticket*/
+                        var tickblueUp = "+=300";
+                        var tickblueDrop = "-=100";
+                        if (hc_$(".hc_tickblue").hasClass("io4")) {
+                            tickblueUp = "+=280";
+                            tickblueDrop = "-=70";
+                        }
+                        if (hc_$(".hc_tickblue").hasClass("io5")) {
+                            tickblueUp = "+=180";
+                            tickblueDrop = "-=80";
+                        }
+                        hc_$(".hc_tickblue").delay(5).animate({
+                            bottom: tickblueUp
+                        }, 
+                        {
+                            duration: 500,
+                            easing: 'swing',
+                            complete: function () {
+                                console.log("blue ticket rise");
+                                /*hc_$(this).delay(2000).fadeOut();*/
+                                hc_$(this).delay(2000).animate({
+                                    bottom: tickblueDrop
+                                }, 
+                                {
+                                    duration: 500,
+                                    easing: 'swing',
+                                    complete: function () {
+                                        console.log("blue ticket drop");
+                                    }
+
+                                });
+
+                            }
+                        });
+                        /*blue ticket*/
+
+                        /*green ticket*/
+                        var tickgreenUp = "+=460";
+                        var tickgreenDrop = "-=100";
+                        if (hc_$(".hc_tickgreen").hasClass("io4")) {
+                            tickgreenUp = "+=400";
+                            tickgreenDrop = "-=50";
+                        }
+                        if (hc_$(".hc_tickgreen").hasClass("io5")) {
+                            tickgreenUp = "+=350";
+                            tickgreenDrop = "-=90";
+                        }
+                        hc_$(".hc_tickgreen").delay(5).animate({
+                            bottom: tickgreenUp
+                        }, 
+                        {
+                            duration: 500,
+                            easing: 'swing',
+                            complete: function () {
+                                console.log("green ticket rise");
+                                /*hc_$(this).delay(2000).fadeOut();*/
+                                hc_$(this).delay(2000).animate({
+                                    bottom: tickgreenDrop
+                                }, 
+                                {
+                                    duration: 500,
+                                    easing: 'swing',
+                                    complete: function () {
+                                        console.log("green ticket drop");
+                                    }
+                                });
+                                hc_$(".hc_tuganas").addClass("on");
+                            }
+                        });
+                        /*green ticket*/
+
+                        /*purple ticket*/
+                        /*purple ticket*/
+                        var tickpurpleUp = "+=600";
+                        var tickpurpleDrop = "-=100";
+                        if (hc_$(".hc_tickpurple").hasClass("io4")) {
+                            tickpurpleUp = "+=600";
+                            tickpurpleDrop = "-=60";
+                        }
+                        if (hc_$(".hc_tickpurple").hasClass("io5")) {
+                            tickpurpleUp = "+=490";
+                            tickpurpleDrop = "-=90";
+                        }
+                        hc_$(".hc_tickpurple").delay(5).animate({
+                            bottom: tickpurpleUp
+                        }, 
+                        {
+                            duration: 300,
+                            easing: 'swing',
+                            complete: function () {
+                                console.log("green ticket rise");
+                                /*hc_$(this).delay(2000).fadeOut();*/
+                                hc_$(this).delay(2000).animate({
+                                    bottom: tickpurpleDrop
+                                }, 
+                                {
+                                    duration: 500,
+                                    easing: 'swing',
+                                    complete: function () {
+                                        console.log("purple ticket drop");
+                                        /*nosotros pagamos*/
+                                        hc_$(".hc_npl").addClass("on");
+                                        hc_$(".hc_npl").animate({
+                                            opacity: 1,
+                                            top: "+=15"
+                                        }, 
+                                        {
+                                            duration: 500,
+                                            easing: 'swing',
+                                            complete: function () {
+                                                console.log("full drop");
+                                            }
+                                        });
+                                        /*nosotros pagamos*/
+
+                                        /*tu ganas*/
+                                        hc_$(".hc_tuganas").addClass("on");
+                                        hc_$(".hc_tuganas").delay(200).animate({
+                                            opacity: 1,
+                                            top: "+=80"
+                                        }, 
+                                        {
+                                            duration: 300,
+                                            easing: 'swing',
+                                            complete: function () {
+                                                console.log("full drop");
+                                                hc_$(".hc_todo").addClass("on");
+                                                hc_$(".hc_todo").animate({
+                                                    opacity: 1,
+                                                    top: "+=40"
+                                                }, 
+                                                {
+                                                    duration: 300,
+                                                    easing: 'swing',
+                                                    complete: function () {
+                                                        console.log("todo es drop");
+                                                    }
+                                                });
+                                            }
+                                        });
+                                        /*tu ganas*/
+
+                                        /*store button*/
+                                        hc_$(".hc_store").delay(200).fadeIn( "slow", function () {
+                                            hc_$(".hc_store").click(function (e) {
+                                                
+                                                /*hc.trackGeneralEvent({
+                                                    category: "navigation",
+                                                    subcategory: "click",
+                                                    action: "button",
+                                                    label: "StoreLocator"
+                                                });*/
+                                                
+                                                hc_$('.hc_wrapper').hide();	
+                                                initialize();
+                                                hc_$('#hc_locate').show();
+                                                locateHeight =  hc_$("#hc_locate").height();
+                                                console.log(locateHeight);
+                                                inputHeight = hc_$("#hc_locationbuttons").height();
+                                                console.log(inputHeight);
+                                                mapHeight = 200;
+                                                console.log(mapHeight);
+                                                storeResults = (locateHeight - inputHeight - mapHeight) - 160;
+                                                console.log(storeResults);
+                                                hc_$("#hc_stores").css("height", storeResults);
+                                                
+                                                hc_$(".hc_backmap").click(function (e) {
+                                                    hc_$(".result").remove();
+                                                    hc_$('#hc_locate').hide();
+                                                    hc_$('.hc_wrapper').show();	
+                                                });
+                                                
+                                                hc_$(".hc_btn_current").on("click", function() {
+                                                    console.log('use current location');
+                                                    /*hc.trackGeneralEvent({
+                                                        category: "navigation",
+                                                        subcategory: "click",
+                                                        action: "button",
+                                                        label: "UbicacionActual"
+                                                    });*/
+                                                    getLocation();
+                                                });
+                                                hc_$(".hc_btn_submit").on("click", function() {
+                                                    console.log('use zip location');
+                                                    /*hc.trackGeneralEvent({
+                                                        category: "navigation",
+                                                        subcategory: "click",
+                                                        action: "button",
+                                                        label: "Ir"
+                                                    });*/
+                                                    getZipLocation();
+                                                });
+                                                /*hc_$(".hc_btn_back").on("click", function() {
+                                                    console.log('back from locations');
+                                                    hc_$(".hc_wrapper").show();
+                                                    hc_$('#hc_locate').hide();
+                                                });*/
+
+                                                var map;
+
+                                                function initialize() {
+                                                    console.log('initial map');
+                                                    var mapOptions = {
+                                                        zoom: 8,
+                                                        center: new google.maps.LatLng(38.5816667, -121.4933333)
+                                                    };
+                                                    map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+                                                }
+                                                
+                                                function getLocation() {
+                                                    console.log('get location');
+                                                    if (navigator.geolocation) {
+                                                        var options = {
+                                                            enableHighAccuracy: true,
+                                                            timeout: 5000,
+                                                            maximumAge: 0
+                                                        };
+                                                        navigator.geolocation.getCurrentPosition(success, error, options);
+
+                                                        function success(pos) {
+                                                            var crd = pos.coords;
+                                                            console.log(crd);
+                                                            getShareLocation(crd);
+                                                            console.log(crd.latitude + ' ' + crd.longitude);
+
+                                                        };
+
+                                                        function error(err) {
+                                                            console.log('ERROR(' + err.code + '): ' + err.message);
+                                                            getShareLocation("none");
+                                                        };
+                                                    }
+                                                }
+                                                
+                                                function getShareLocation(position) {
+                                                    var url;
+                                                    var markerset = new Array();
+                                                    hc_$('#hc_stores').empty();
+                                                    if (position != "none") {
+                                                        url = 'http://rm_helpers.g.aug.me/locator?file=ca_lottery.3473&xmap_lat='+position.latitude+'&xmap_lng='+position.longitude+'&callback=?';
+                                                    } else {
+                                                        url = 'http://rm_helpers.g.aug.me/locator?file=ca_lottery.3473&xmap_lat=38.6173004&xmap_lng=-121.3650559&callback=?';
+                                                    }
+                                                    hc_$.getJSON(url, function(data) {
+                                                        var length = 5;
+                                                        if (length > 0) {
+                                                            for (i = 0; i < length; i++) {
+                                                                buildResult(data.data[i], i + 1);
+                                                            }
+                                                        } else {
+                                                            hc_$("#hc_stores").html("<div class='sorry'>Sorry, no results in your area.<\/div>");
+                                                        }
+                                                        /*UPDATE THE STORE INFORMATION FROM THE data VARIABLE AFTER USER SHARED LOCATION */
+                                                        function buildResult(result, num) {
+                                                            /* Result container */
+                                                            var div = document.createElement("div");
+                                                            hc_$(div).addClass("result");
+                                                            /*Store title*/
+                                                            var title = document.createElement("h2");
+                                                            hc_$(title).html(result.name);
+                                                            hc_$(div).append(title);
+                                                            /*Address*/
+                                                            var address = document.createElement("p");
+                                                            hc_$(address).html(result.address + "<br/>" + result.city + ", CA " + result.zipcode);
+                                                            hc_$(div).append(address);
+                                                            hc_$("#hc_stores").append(div);
+
+
+                                                            markerset[markerset.length] = new Array(result.name, Number(result.xmap_lat), Number(result.xmap_lng), result.address, result.city, result.zipcode);
+                                                        }
+
+                                                        (function(){
+                                                            var bounds = new google.maps.LatLngBounds();
+                                                            var mapOptions = {
+
+                                                            };
+                                                            map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+                                                            var image = {
+                                                                url: 'images/calottery/46157.png',
+                                                                size: new google.maps.Size(20, 32),
+                                                                origin: new google.maps.Point(0,0),
+                                                                anchor: new google.maps.Point(0, 32)
+                                                            };
+                                                            var shape = {
+                                                                coords: [1, 1, 1, 20, 18, 20, 18 , 1],
+                                                                type: 'poly'
+                                                            };
+                                                            var infoWindow = new google.maps.InfoWindow(), marker, i;
+
+                                                            for( i = 0; i < markerset.length; i++ ) {
+                                                                var position = new google.maps.LatLng(markerset[i][1], markerset[i][2]);
+                                                                bounds.extend(position);
+                                                                marker = new google.maps.Marker({
+                                                                    position: position,
+                                                                    map: map,
+                                                                    title: markerset[i][0],
+                                                                    icon: image,
+                                                                    shape: shape
+                                                                });
+                                                                google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                                                                    return function() {
+                                                                        infoWindow.setContent(markerset[i][0] + '<br />' + markerset[i][3] + '<br />' + markerset[i][4] + ', CA ' + markerset[i][5]);
+                                                                        infoWindow.open(map, marker);
+                                                                    }
+                                                                })(marker, i));
+
+                                                                map.fitBounds(bounds);
+                                                            }
+                                                        })();
+                                                    });
+                                                }
+                                                function getZipLocation(zip) {
+
+                                                    var markerset = new Array();
+                                                    var enteredZip = hc_$('#zipper').val();
+                                                    hc_$('#hc_stores').empty();
+                                                    var url = 'http://rm_helpers.g.aug.me/locator?file=ca_lottery.3473&map_zipcode=' + enteredZip + '&callback=?';
+                                                    console.log(enteredZip);
+                                                    hc_$.getJSON(url, function(data) {
+                                                        var length = 5;
+                                                        if (length > 0) {
+                                                            for (i = 0; i < length; i++) {
+                                                                buildResult(data.data[i], i + 1);
+                                                            }
+                                                        } else {
+                                                            hc_$("#hc_stores").html("<div class='sorry'>Sorry, no results in your area.<\/div>");
+                                                        }
+                                                        /*UPDATE THE STORE INFORMATION FROM THE data VARIABLE AFTER USER SHARED LOCATION */
+                                                        function buildResult(result, num) {
+                                                            /* Result container */
+                                                            var div = document.createElement("div");
+                                                            hc_$(div).addClass("result");
+                                                            /*Store title*/
+                                                            var title = document.createElement("h2");
+                                                            hc_$(title).html(result.name);
+                                                            hc_$(div).append(title);
+                                                            /*Address*/
+                                                            var address = document.createElement("p");
+                                                            hc_$(address).html(result.address + "<br/>" + result.city + ", CA " + result.zipcode);
+                                                            hc_$(div).append(address);
+                                                            hc_$("#hc_stores").append(div);
+
+
+                                                            markerset[markerset.length] = new Array(result.name, Number(result.xmap_lat), Number(result.xmap_lng), result.address, result.city, result.zipcode);
+                                                        }
+
+                                                        (function(){
+                                                            var bounds = new google.maps.LatLngBounds();
+                                                            var mapOptions = {
+                                                                center: new google.maps.LatLng(38.5816667, -121.4933333)
+                                                            };
+                                                            map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+                                                            var image = {
+                                                                url: 'http://a.aug.me/augmeimg/47000/46157.png',
+                                                                size: new google.maps.Size(20, 32),
+                                                                origin: new google.maps.Point(0,0),
+                                                                anchor: new google.maps.Point(0, 32)
+                                                            };
+                                                            var shape = {
+                                                                coords: [1, 1, 1, 20, 18, 20, 18 , 1],
+                                                                type: 'poly'
+                                                            };
+                                                            var infoWindow = new google.maps.InfoWindow(), marker, i;
+                                                            for( i = 0; i < markerset.length; i++ ) {
+                                                                var position = new google.maps.LatLng(markerset[i][1], markerset[i][2]);
+                                                                bounds.extend(position);
+                                                                marker = new google.maps.Marker({
+                                                                    position: position,
+                                                                    map: map,
+                                                                    title: markerset[i][0],
+                                                                    icon: image,
+                                                                    shape: shape
+                                                                });
+                                                                google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                                                                    return function() {
+                                                                        infoWindow.setContent(markerset[i][0] + '<br />' + markerset[i][3] + '<br />' + markerset[i][4] + ', CA ' + markerset[i][5]);
+                                                                        infoWindow.open(map, marker);
+                                                                    }
+                                                                })(marker, i));
+
+
+
+                                                                map.fitBounds(bounds);
+                                                            }
+                                                        })();
+                                                    });
+                                                }
+                                                
+                                            }); /*end store click*/
+                                        }); /*store fade in*/
+
+                                        /*legal button*/
+                                        hc_$(".hc_legal").delay(200).fadeIn( "slow", function() {
+                                            /* Animation complete; */
+                                            hc_$(".hc_legal").on("click tap", function ()                                           {
+                                                console.log("click");
+                                                /*hc.trackGeneralEvent({
+                                                    category: "navigation",
+                                                    subcategory: "click",
+                                                    action: "click",
+                                                    label: "LegalOpen"
+                                                });*/
+                                                hc_$(".hc_overlay").addClass("on");
+                                                hc_$(".hc_playback").addClass("on").on("click tap", function () {
+                                                    console.log("loaded");
+                                                    /*hc.trackGeneralEvent({
+                                                        category: "navigation",
+                                                        subcategory: "click",
+                                                        action: "click",
+                                                        label: "LegalClose"
+                                                    });*/
+                                                    hc_$(".hc_playback").removeClass("on");
+                                                    hc_$(".hc_overlay").removeClass("on");
+                                                });
+                                            });
+                                        });
+                                        
+                                        
+                                    }
+                                });
+
+                            }
+                        });
+                        /*purple ticket*/
+                        
+                    }
+                    
+                    /*endframe*/
+                    
+                });
+			};
+  </script>
+        <script type="text/javascript" src="mraid.js"></script>
+        <!--
+            Make sure all id's and classes are prefixed with hc_
+        -->
+
+        
+
+
+        <div class="hc_initial_view">
+            <a href="" class="hc_expand">
+                <div class="hc_nosotros"><img src="images/calottery/47097.png"/></div>
+                <div class="hc_tu"><img src="images/calottery/47096.png"/></div>
+                <div class="hc_tickets"><img src="images/calottery/47099.png"/></div>
+                <div class="hc_logo_bit"><img src="images/calottery/47095.png"/></div>
+                <div class="hc_endframe">
+                    <div class="hc_nuevo"><img src="images/calottery/47098.png"/></div>
+                    <div class="hc_ticketmid"><img src="images/calottery/47099.png"/></div>
+                    <div class="hc_expand hc_expandir"><a href="http://www.calottery.com/"><img src="images/calottery/47100.png"/></a></div>
+                </div>
+            </a>
+        </div>
+        <div class="hc_content" id="hc_content" style="display:none;">
+            <div class="hc_closebtn" style="display:none;"><img src="images/calottery/47121.png"/></div>
+            <div class="hc_header">
+                <div class="hc_logo">
+                    <a id="hc_logoscratch" href=""><img src="images/calottery/47122.png"/></a>
+                </div>
+                <div class="hc_social">
+                    <div class="hc_socialblock">
+                        <div class="hc_siguenos"><img src="images/calottery/47140.png"/></div>      
+                        <ul class="hc_iconrow">
+                            <li id="hc_twitter" class="hc_icon"><img src="images/calottery/47143.png"/></li>
+                            <li id="hc_facebook" class="hc_icon"><img src="images/calottery/47141.png"/></li>
+                            <li id="hc_instagram" class="hc_icon"><img src="images/calottery/47142.png"/></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="hc_overlay">
+                <div class="hc_playback">BACK</div>
+                <div class="hc_play"><img src="images/calottery/47151.png"/></div>
+                <div class="hc_legaltext">
+                    <p>El total de probabilidades del Taxes Paid Scratchers<sup>&reg;</sup> de $25,000 es de 1 en 4.33. El total de probabilidades del Taxes Paid Scratchers<sup>&reg;</sup> $250,000 es de 1 en 3.74. El total de probabilidades del Taxes Paid Scratchers<sup>&reg;</sup> $1,000,000 es de 1 en 3.29. La Loter&iacute;a de California retendr&aacute; y remitir&aacute; los impuestos federales est&aacute;ndares de 25% en el premio mayor. Los ganadores de premios mayores ser&aacute;n responsables de cualquier impuesto adicional.</p>
+                </div>
+            </div>
+            <div class="hc_wrapper">
+                <div class="hc_screen_intro">
+                    <div class="hc_tuganas_premio"><img src="images/calottery/47139.png"/></div>
+                    <div class="hc_el_premio"><img src="images/calottery/47124.png"/></div>
+                    <div class="hc_nosotros_pagamos"><img src="images/calottery/47153.png"/></div>
+                    <div class="hc_impuestos"><img src="images/calottery/47126.png"/></div>
+                    <canvas id="canvas" width="300" height="250" style="background-color:transparent"></canvas>
+                </div>
+                <div class="hc_screen_cta">
+                    <div class="hc_nuevo_rm"><img src="images/calottery/47107.png"/></div>
+                    <div class="hc_taxes"><img src="images/calottery/47110.png"/></div>
+                    <div class="hc_scratchy"><img src="images/calottery/47109.png"/></div>
+                    <div class="hc_tuganas"><img src="images/calottery/47115.png"/></div>
+                    <div class="hc_npl"><img src="images/calottery/47128.png"/></div>
+                    <div class="hc_todo"><img src="images/calottery/47103.png"/></div>
+                    <div class="hc_tickblue"><img src="images/calottery/47136.png"/></div>
+                    <div class="hc_tickpurple"><img src="images/calottery/47113.png"/></div>
+                    <div class="hc_tickgreen"><img src="images/calottery/47112.png"/></div>
+                    <div class="hc_legal">Legal</div>
+                    <div class="hc_store"><img src="images/calottery/47123.png"/></div>
+                </div>
+                
+            </div>
+            <!-- store locate-->
+            <div id="hc_locate">
+                      <!--<a href="#" class="hc_btn_back"></a>-->
+                      <!--<div class="hc_social">
+                        <a href="https://twitter.com/calottery" class="hc_twitter"><img src="http://a.aug.me/augmeimg/47000/46103.png" alt="" /></a>
+                        <a href="https://www.facebook.com/calottery" class="hc_facebook"><img src="http://a.aug.me/augmeimg/47000/46102.png" alt="" /></a>
+                      </div>-->
+                        <div class="hc_backmap">BACK</div>
+                      <div id="hc_locationbuttons">
+                        <form>
+                        <a href="#" class="hc_btn_current"><img src="images/calottery/47154.png" alt="" /></a>
+                        <input type="number" placeholder="c&oacute;digo postal" id="zipper" />
+                        <a href="#" class="hc_btn_submit"><img src="images/calottery/47134.png" alt="" /></a>
+                        </form>
+                      </div>
+                      <div id="map-canvas"></div>
+                      <div id="hc_stores"> </div>  
+                </div>
+                <!-- store locate -->
+        </div>
+    </div>
